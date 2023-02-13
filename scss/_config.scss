@@ -1,0 +1,23 @@
+/*---------- Config ----------*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*---------- Colors ----------*/
+
+$main-background: #000;
+$main-theme: #3dd8fc;
+$main-theme-second: #f752e0;
+
+/*---------- Fonts ----------*/
+
+$main-font: 'Roboto', sans-serif;
+
+@font-face {
+	font-family: 'Lovelo-Line';
+	src: url('../fonts/LoveloLine.otf') format('opentype');
+}
+

@@ -1,0 +1,137 @@
+@media screen and (max-width: 900px) {
+	/*---------- Menu ----------*/
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		max-height: 84px;
+		
+
+		&__links {
+			
+			border-top: 1px solid $main-theme;
+			animation-name: menu-slide-down;
+			animation-duration: 1s;
+			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
+			display: none;
+			margin: auto;
+			width: 80%;
+			background-color: black;
+
+			ul {
+				flex-direction: column;
+				width: 100%;
+				 
+				li {
+					text-align: center;
+
+					a {
+						padding: 1.1rem 1rem;
+					}
+				}
+			}&.active{
+				display: flex;
+			}
+
+		}
+
+		.toggle-button {
+			display: flex;
+			margin-top: 1rem;
+
+			.bar {
+				height: 3px;
+				width: 100%;
+				background-color: white;
+				border-radius: 10px;
+			}
+		}
+		
+	}
+}
+
+@media (max-width: 1200px) {
+	.about-section {
+		.about-row {
+			display: flex;
+			flex-direction: column-reverse;	
+		}
+
+		.col-2 {
+			gap: 2;
+		}
+	
+		.about__column--first {
+			.module-text {
+				&--first {
+					font-size: 1.8rem;
+				}
+	
+				&--second {
+	
+					p {
+						font-size: 1.4em;
+					}
+	
+				}
+			}
+		}
+	
+		.about__column--second {
+			.module-img img{
+				width: 100%;
+				margin-top: 2.2rem
+			}
+		}
+	
+		.product-row {
+			display: flex;
+			flex-direction: column;
+
+			.product__column {
+
+				.module-note {
+					display: flex;
+					flex-direction: column;
+	
+					h3 {
+						font-size: 1.8rem;
+						margin-bottom: 0.4rem;
+						color: $main-theme;
+						text-align: center;
+					}
+	
+					p {
+						font-size: 1.4rem;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-section {
+
+		.contact-row {
+			display: flex;
+			flex-direction: column;
+
+			.contact__column--second {
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+			
+		}
+		.module-text {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.module-text--first {
+		font-size: 1.8rem;
+	}
+}
